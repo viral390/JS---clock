@@ -57,7 +57,7 @@
             <div class="card-body">
                 <h5 class="card-title">"current time is :" <span class="timer" id="tm"></span> </h5>
                 <p class="card-text">Your time is here </p>
-                <a href="#" class="btn btn-primary">browse time</a>
+                <a href="#" class="btn btn-primary click " id="alrt">END</a>
             </div>
         </div>
 
@@ -86,6 +86,9 @@
         timing = a.getHours() + ":" + a.getMinutes() + ":" + a.getSeconds();
         document.getElementById("tm").innerHTML = date + " on " + timing;
     }, 1000);
+
+    let al = alert("good bye");
+    document.getElementById("alrt".onclick).innerHTML = al
 </script>
 
 </html>
